@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "no-console": false,
+    "indent": [
+      true,
+      "spaces"
+    ],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "always",
+        "named": "never",
+        "asyncArrow": "ignore"
+      }
+    ]
+  },
+  "linterOptions": {
+    "exclude": [
+      "src/**/*.json",
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+    ]
+  }
+}

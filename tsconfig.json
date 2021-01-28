@@ -1,0 +1,33 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "outDir": "built",
+    "rootDir": "./src",
+    "target": "es6",
+    "moduleResolution": "node",
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "declaration": true,
+    "baseUrl": "./src",
+    "paths": {
+      "*": ["./*"],
+      "src/*": ["./src/*"]
+    },
+    "types": ["node", "@wdio/sync", "@wdio/mocha-framework"]
+  },
+  "include": [
+    "./src/**/*.ts", "src/config/common.js", "src/config/android.js"
+  ],
+  "exclude": ["node_modules"]
+}
